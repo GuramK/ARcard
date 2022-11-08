@@ -172,6 +172,7 @@
         window.zappar.permission_request_ui_promise().then(WaitForZCVLoad);
 
         function WaitForZCVLoad() {
+            CreateUnityLoader();
             if (zappar.loaded()) {
                 CreateUnityLoader();
                 return;
