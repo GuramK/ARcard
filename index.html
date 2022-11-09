@@ -168,7 +168,7 @@
         script.src = loaderUrl;
         //script.onload = () => { CreateUnityLoader();   };
         document.body.appendChild(script);
-
+        CreateUnityLoader();
         window.zappar.permission_request_ui_promise().then(WaitForZCVLoad);
 
         function WaitForZCVLoad() {
