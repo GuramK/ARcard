@@ -131,16 +131,16 @@
             <div class="spinner"></div>
         </div>
     </div>
-    <script type="text/javascript" src="https://raw.githubusercontent.com/GuramK/ARtest/main/zappar-cv.js"></script>
+    <script type="text/javascript" src="https://cdn.discordapp.com/attachments/1011252399773581364/1039688645885558784/zappar-cv.js"></script>
     <script> 
         var db = indexedDB.open("dummy_indexdb", 1); // iOS 14.6 fix; the call to open indexdb hangs forever otherwise
 
         const buildUrl = "Build";
-        const loaderUrl = buildUrl + "/ARcard.loader.js";
+        const loaderUrl = buildUrl + "/New folder.loader.js";
         const config = {
-            dataUrl: buildUrl + "/ARcard.data",
-            frameworkUrl: buildUrl + "/ARcard.framework.js",
-            codeUrl: buildUrl + "/ARcard.wasm",
+            dataUrl: buildUrl + "/New folder.data",
+            frameworkUrl: buildUrl + "/New folder.framework.js",
+            codeUrl: buildUrl + "/New folder.wasm",
         streamingAssetsUrl: "StreamingAssets",
             companyName: "DefaultCompany",
             productName: "AR Card",
@@ -172,7 +172,6 @@
         window.zappar.permission_request_ui_promise().then(WaitForZCVLoad);
 
         function WaitForZCVLoad() {
-            CreateUnityLoader();
             if (zappar.loaded()) {
                 CreateUnityLoader();
                 return;
