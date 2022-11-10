@@ -136,11 +136,11 @@
         var db = indexedDB.open("dummy_indexdb", 1); // iOS 14.6 fix; the call to open indexdb hangs forever otherwise
 
         const buildUrl = "Build";
-        const loaderUrl = buildUrl + "/NewverTest.loader.js";
+        const loaderUrl = buildUrl + "/ARcard.loader.js";
         const config = {
-            dataUrl: buildUrl + "/NewverTest.data",
-            frameworkUrl: buildUrl + "/NewverTest.framework.js",
-            codeUrl: buildUrl + "/NewverTest.wasm",
+            dataUrl: buildUrl + "/ARcard.data",
+            frameworkUrl: buildUrl + "/ARcard.framework.js",
+            codeUrl: buildUrl + "/ARcard.wasm",
         streamingAssetsUrl: "StreamingAssets",
             companyName: "DefaultCompany",
             productName: "AR Card",
