@@ -131,16 +131,16 @@
             <div class="spinner"></div>
         </div>
     </div>
-    <script type="text/javascript" src="./Build/zappar-cv.js"></script>
+    <script type="text/javascript" src="https://libs.zappar.com/zappar-cv/2.0.0/zappar-cv.js"></script>
     <script>
         var db = indexedDB.open("dummy_indexdb", 1); // iOS 14.6 fix; the call to open indexdb hangs forever otherwise
 
         const buildUrl = "Build";
-        const loaderUrl = buildUrl + "/ARcard.loader.js";
+        const loaderUrl = buildUrl + "/NewverTest.loader.js";
         const config = {
-            dataUrl: buildUrl + "/ARcard.data",
-            frameworkUrl: buildUrl + "/ARcard.framework.js",
-            codeUrl: buildUrl + "/ARcard.wasm",
+            dataUrl: buildUrl + "/NewverTest.data",
+            frameworkUrl: buildUrl + "/NewverTest.framework.js",
+            codeUrl: buildUrl + "/NewverTest.wasm",
         streamingAssetsUrl: "StreamingAssets",
             companyName: "DefaultCompany",
             productName: "AR Card",
